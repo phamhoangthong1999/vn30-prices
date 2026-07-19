@@ -1,0 +1,29 @@
+name: Cập nhật giá VN30
+
+on:
+  schedule:
+    - cron: '15 8 * * 1-5'
+  workflow_dispatch: {}
+
+jobs:
+  update-prices:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Lấy giá VN30 mới nhất
+        run: node fetch-vn30-prices.js
+
+      - name: Commit & push nếu có thay đổi
+        run: |
+          git config user.name "vn30-price-bot"
+          git config user.email "actions@github.com"
+          git add vn30-prices.json
+          git diff --cached --quiet || git commit -m "Cập nhật giá VN30 $(date -u +'%Y-%m-%d %H:%M UTC')"
+          git push
