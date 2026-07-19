@@ -35,7 +35,10 @@ async function fetchSymbol(symbol) {
   try {
     const res = await fetch(url, {
       headers: {
-        'User-Agent': 'Mozilla/5.0 (compatible; vn30-price-updater/1.0)'
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36',
+        'Accept': 'application/json, text/plain, */*',
+        'Referer': 'https://dstock.vndirect.com.vn/',
+        'Origin': 'https://dstock.vndirect.com.vn'
       }
     });
     if (!res.ok) throw new Error('HTTP ' + res.status);
@@ -61,7 +64,9 @@ async function fetchSymbol(symbol) {
       date: latest.date
     };
   } catch (err) {
-    console.warn(`[${symbol}] Lỗi lấy giá:`, err.message);
+    // In cả nguyên nhân gốc (err.cause) — "fetch failed" một mình không nói
+    // lên nguyên nhân thật (bị chặn IP, DNS lỗi, hay timeout).
+    console.warn(`[${symbol}] Lỗi lấy giá:`, err.message, err.cause || '');
     return null; // bỏ qua mã lỗi, giữ nguyên dữ liệu cũ ở phía website
   }
 }
