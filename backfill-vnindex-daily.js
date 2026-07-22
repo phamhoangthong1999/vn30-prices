@@ -82,6 +82,13 @@ async function fetchDailyIndexHistory(token, fromDate, toDate) {
     const total = Number(json.totalRecord || rows.length);
     console.log(`  Trang ${pageIndex}: lấy được ${rows.length} dòng (tổng ${total})`);
 
+    // In toàn bộ phản hồi thô nếu không có dữ liệu, để biết chính xác SSI báo lỗi/lý do gì
+    // (ví dụ: không có quyền truy cập API này, sai tham số, message lỗi cụ thể, v.v.)
+    if (rows.length === 0) {
+      console.log('  HTTP status:', res.status);
+      console.log('  Phản hồi thô từ SSI (debug):', JSON.stringify(json));
+    }
+
     if (all.length >= total || rows.length === 0 || pageIndex >= 10) break;
     pageIndex++;
   }
