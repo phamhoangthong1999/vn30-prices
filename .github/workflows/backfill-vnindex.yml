@@ -1,0 +1,35 @@
+name: Backfill lịch sử VN-Index (chạy 1 lần)
+
+# Chạy TAY 1 LẦN từ tab Actions để nạp dữ liệu lịch sử vào vnindex-history.json.
+# Sau khi chạy xong và thấy chart đã đẹp, bạn có thể xoá file workflow này đi,
+# vì nó không cần chạy lại (fetch-vnindex-history.js đã lo phần cập nhật 15 phút/lần).
+on:
+  workflow_dispatch: {}
+
+jobs:
+  backfill:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Chạy script backfill
+        env:
+          SSI_CONSUMER_ID: ${{ secrets.SSI_CONSUMER_ID }}
+          SSI_CONSUMER_SECRET: ${{ secrets.SSI_CONSUMER_SECRET }}
+        run: node backfill-vnindex-daily.js
+
+      - name: Commit và push kết quả
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add vnindex-history.json
+          git diff --cached --quiet && echo "Không có gì thay đổi" || git commit -m "Backfill lịch sử VN-Index"
+          git push
