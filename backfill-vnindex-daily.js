@@ -105,18 +105,43 @@ function loadHistory() {
   }
 }
 
+// SSI giới hạn mỗi lần gọi DailyIndex tối đa 30 ngày (fromDate -> toDate),
+// nên phải chia khoảng BACKFILL_DAYS thành nhiều đoạn <= 30 ngày rồi gộp lại.
+const MAX_RANGE_DAYS = 30;
+
 async function main() {
   const today = new Date();
-  const fromDateObj = new Date(today.getTime() - BACKFILL_DAYS * 24 * 60 * 60 * 1000);
-  const fromDate = formatDateDMY(fromDateObj);
-  const toDate = formatDateDMY(today);
+  const overallFromObj = new Date(today.getTime() - BACKFILL_DAYS * 24 * 60 * 60 * 1000);
 
   console.log('Đang lấy access token từ SSI...');
   const token = await getAccessToken();
   console.log('Lấy access token thành công.');
 
-  console.log(`Đang lấy dữ liệu VN-Index theo ngày từ ${fromDate} đến ${toDate}...`);
-  const rows = await fetchDailyIndexHistory(token, fromDate, toDate);
+  console.log(`Đang lấy dữ liệu VN-Index theo ngày từ ${formatDateDMY(overallFromObj)} đến ${formatDateDMY(today)} (chia đoạn tối đa ${MAX_RANGE_DAYS} ngày/lần)...`);
+
+  let rows = [];
+  let chunkStart = new Date(overallFromObj);
+  let chunkIndex = 1;
+
+  while (chunkStart <= today) {
+    let chunkEnd = new Date(chunkStart.getTime() + (MAX_RANGE_DAYS - 1) * 24 * 60 * 60 * 1000);
+    if (chunkEnd > today) chunkEnd = new Date(today);
+
+    const fromDate = formatDateDMY(chunkStart);
+    const toDate = formatDateDMY(chunkEnd);
+    console.log(`Đoạn ${chunkIndex}: ${fromDate} -> ${toDate}`);
+
+    const chunkRows = await fetchDailyIndexHistory(token, fromDate, toDate);
+    rows = rows.concat(chunkRows);
+
+    chunkStart = new Date(chunkEnd.getTime() + 24 * 60 * 60 * 1000);
+    chunkIndex++;
+
+    // Nghỉ 300ms giữa các lần gọi để tránh bị SSI giới hạn tần suất (rate limit)
+    if (chunkStart <= today) {
+      await new Promise(resolve => setTimeout(resolve, 300));
+    }
+  }
 
   if (!rows.length) {
     throw new Error('Không lấy được dữ liệu lịch sử nào. Kiểm tra lại quyền truy cập DailyIndex trên tài khoản SSI.');
