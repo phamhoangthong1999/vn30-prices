@@ -18,6 +18,9 @@ jobs:
           node-version: '20'
 
       - name: Lấy giá VN30 mới nhất
+        env:
+          SSI_CONSUMER_ID: ${{ secrets.SSI_CONSUMER_ID }}
+          SSI_CONSUMER_SECRET: ${{ secrets.SSI_CONSUMER_SECRET }}
         run: node fetch-vn30-prices.js
 
       - name: Commit & push nếu có thay đổi
