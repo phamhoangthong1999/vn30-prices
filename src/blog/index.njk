@@ -7,7 +7,7 @@ permalink: "/blog/"
 <p style="color:red; font-weight:bold;">DEBUG: số bài viết = {{ collections.posts.length }}</p>
 <div class="blog-grid">
   {% for post in collections.posts | reverse %}
-  <a href="{{ post.url }}" class="blog-card fade-in" style="text-decoration:none; color:inherit;">
+  <a href="{{ post.url | url }}" class="blog-card fade-in" style="text-decoration:none; color:inherit;">>
     <div class="blog-tags">
       {% for tag in post.data.tags %}
         {% if tag != "posts" %}<span class="blog-tag">{{ tag }}</span>{% endif %}
