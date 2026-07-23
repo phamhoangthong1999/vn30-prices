@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{ title }} — OnTrend Blog</title>
+<meta name="description" content="{{ excerpt or "Kiến thức đầu tư, phân tích thị trường chứng khoán Việt Nam từ OnTrend." }}">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<!-- CSS gốc của site (trích từ index.html, giữ nguyên màu/font/hiệu ứng) -->
+<link rel="stylesheet" href="/assets/css/site.css">
+<!-- CSS bổ sung riêng cho blog (bài viết, danh sách bài) -->
+<link rel="stylesheet" href="/assets/css/blog.css">
+</head>
+<body>
+
+<!-- ===== HEADER (giống hệt trang chủ, chỉ đổi link sang URL thật thay vì showPage()) ===== -->
+<header id="header">
+  <div class="header-top">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <span class="logo-text">On <span>Trend</span></span>
+      </a>
+
+      <nav id="mainNav">
+        <a href="/">Trang chủ</a>
+        <a href="/#about">Giới thiệu</a>
+        <a href="/#services">Dịch vụ</a>
+        <a href="/#products">Sản phẩm</a>
+        <a href="/blog/" class="active">Blog</a>
+        <a href="/#contact">Liên hệ</a>
+      </nav>
+
+      <div class="header-socials">
+        <a href="https://www.youtube.com/@chungkhoanontrend" target="_blank" rel="noopener" class="social-icon" title="YouTube">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2C0 8.1 0 12 0 12s0 3.9.5 5.8a3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1C24 15.9 24 12 24 12s0-3.9-.5-5.8zM9.7 15.5V8.5l6.3 3.5-6.3 3.5z"/></svg>
+        </a>
+        <a href="https://www.facebook.com/" target="_blank" rel="noopener" class="social-icon" title="Facebook">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.07C24 5.41 18.63 0 12 0S0 5.41 0 12.07C0 18.1 4.39 23.1 10.13 24v-8.44H7.08v-3.49h3.04V9.41c0-3.02 1.8-4.7 4.54-4.7 1.31 0 2.68.24 2.68.24v2.97h-1.5c-1.5 0-1.96.93-1.96 1.89v2.26h3.33l-.53 3.49h-2.8V24C19.61 23.1 24 18.1 24 12.07z"/></svg>
+        </a>
+      </div>
+
+      <a href="/#register" class="btn-nav btn-nav-highlight">
+        Đăng ký tư vấn
+        <span class="btn-nav-badge">Ưu đãi</span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" onclick="document.getElementById('mainNav').classList.toggle('open')">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main class="blog-main">
+  {{ content | safe }}
+</main>
+
+<!-- ===== FOOTER (giống hệt trang chủ) ===== -->
+<footer id="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <span class="logo-text">On <span>Trend</span></span>
+        </div>
+        <p class="footer-desc">Đối tác tài chính đáng tin cậy của bạn. Chuyên tư vấn đầu tư và quản lý tài sản chuyên nghiệp tại Việt Nam.</p>
+        <div class="footer-socials">
+          <a href="https://www.youtube.com/@chungkhoanontrend" target="_blank" rel="noopener" class="social-icon" title="YouTube">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2C0 8.1 0 12 0 12s0 3.9.5 5.8a3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1C24 15.9 24 12 24 12s0-3.9-.5-5.8zM9.7 15.5V8.5l6.3 3.5-6.3 3.5z"/></svg>
+          </a>
+          <a href="https://www.facebook.com/" target="_blank" rel="noopener" class="social-icon" title="Facebook">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.07C24 5.41 18.63 0 12 0S0 5.41 0 12.07C0 18.1 4.39 23.1 10.13 24v-8.44H7.08v-3.49h3.04V9.41c0-3.02 1.8-4.7 4.54-4.7 1.31 0 2.68.24 2.68.24v2.97h-1.5c-1.5 0-1.96.93-1.96 1.89v2.26h3.33l-.53 3.49h-2.8V24C19.61 23.1 24 18.1 24 12.07z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-heading">Điều hướng</div>
+        <div class="footer-links">
+          <a href="/">Trang chủ</a>
+          <a href="/blog/">Blog</a>
+          <a href="/#contact">Liên hệ</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-heading">Liên hệ</div>
+        <div class="footer-contact">
+          <div class="footer-contact-item">
+            <span>0902.424.216 - 0774.102.216</span>
+          </div>
+          <div class="footer-contact-item">
+            <span>chungkhoanontrend@gmail.com</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="footer-copy">© 2026 OnTrend. Tất cả quyền được bảo lưu.</div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

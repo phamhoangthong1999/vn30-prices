@@ -1,0 +1,23 @@
+---
+layout: layouts/base.njk
+title: "Blog kiến thức đầu tư"
+permalink: "/blog/"
+---
+<h1 class="blog-page-title">Blog kiến thức đầu tư</h1>
+
+<div class="blog-grid">
+  {% for post in collections.posts | reverse %}
+  <a href="{{ post.url }}" class="blog-card fade-in" style="text-decoration:none; color:inherit;">
+    <div class="blog-tags">
+      {% for tag in post.data.tags %}
+        {% if tag != "posts" %}<span class="blog-tag">{{ tag }}</span>{% endif %}
+      {% endfor %}
+    </div>
+    <div class="blog-title">{{ post.data.title }}</div>
+    <div class="blog-excerpt">{{ post.data.excerpt }}</div>
+    <div class="blog-meta">
+      <span>{{ post.data.date | vnDate }}</span>
+    </div>
+  </a>
+  {% endfor %}
+</div>
