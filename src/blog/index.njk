@@ -4,7 +4,7 @@ title: "Blog kiến thức đầu tư"
 permalink: "/blog/"
 ---
 <h1 class="blog-page-title">Blog kiến thức đầu tư</h1>
-
+<p style="color:red; font-weight:bold;">DEBUG: số bài viết = {{ collections.posts.length }}</p>
 <div class="blog-grid">
   {% for post in collections.posts | reverse %}
   <a href="{{ post.url }}" class="blog-card fade-in" style="text-decoration:none; color:inherit;">
