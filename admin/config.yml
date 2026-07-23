@@ -1,6 +1,9 @@
 backend:
   name: git-gateway
+  repo: phamhoangthong1999/vn30-prices
   branch: main
+  identity_url: https://auth.decapbridge.com/sites/YOUR-SITE-ID
+  gateway_url: https://gateway.decapbridge.com
 
 media_folder: "images/blog-uploads"
 public_folder: "/images/blog-uploads"
