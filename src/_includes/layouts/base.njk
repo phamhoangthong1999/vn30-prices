@@ -10,9 +10,9 @@
 <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
 <!-- CSS gốc của site (trích từ index.html, giữ nguyên màu/font/hiệu ứng) -->
-<link rel="stylesheet" href="/assets/css/site.css">
+<link rel="stylesheet" href="{{ '/assets/css/site.css' | url }}">
 <!-- CSS bổ sung riêng cho blog (bài viết, danh sách bài) -->
-<link rel="stylesheet" href="/assets/css/blog.css">
+<link rel="stylesheet" href="{{ '/assets/css/blog.css' | url }}">
 </head>
 <body>
 
@@ -20,17 +20,17 @@
 <header id="header">
   <div class="header-top">
     <div class="header-inner">
-      <a href="/" class="logo">
+      <a href="{{ '/' | url }}" class="logo">
         <span class="logo-text">On <span>Trend</span></span>
       </a>
 
       <nav id="mainNav">
-        <a href="/">Trang chủ</a>
-        <a href="/#about">Giới thiệu</a>
-        <a href="/#services">Dịch vụ</a>
-        <a href="/#products">Sản phẩm</a>
-        <a href="/blog/" class="active">Blog</a>
-        <a href="/#contact">Liên hệ</a>
+        <a href="{{ '/' | url }}">Trang chủ</a>
+        <a href="{{ '/' | url }}#about">Giới thiệu</a>
+        <a href="{{ '/' | url }}#services">Dịch vụ</a>
+        <a href="{{ '/' | url }}#products">Sản phẩm</a>
+        <a href="{{ '/blog/' | url }}" class="active">Blog</a>
+        <a href="{{ '/' | url }}#contact">Liên hệ</a>
       </nav>
 
       <div class="header-socials">
@@ -42,7 +42,7 @@
         </a>
       </div>
 
-      <a href="/#register" class="btn-nav btn-nav-highlight">
+      <a href="{{ '/' | url }}#register" class="btn-nav btn-nav-highlight">
         Đăng ký tư vấn
         <span class="btn-nav-badge">Ưu đãi</span>
       </a>
@@ -80,7 +80,7 @@
         <div class="footer-heading">Điều hướng</div>
         <div class="footer-links">
           <a href="/">Trang chủ</a>
-          <a href="/blog/">Blog</a>
+          <a href="{{ '/blog/' | url }}">Blog</a>
           <a href="/#contact">Liên hệ</a>
         </div>
       </div>
