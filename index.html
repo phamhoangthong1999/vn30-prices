@@ -1131,6 +1131,7 @@ nav a.active { color: var(--green); }
   overflow: hidden;
   display: grid; grid-template-columns: 200px 1fr;
   transition: var(--transition);
+  cursor: pointer;
 }
 .blog-card:hover {
   border-color: var(--border-green);
@@ -2076,7 +2077,7 @@ footer {
       <div class="blog-layout">
         <!-- Posts -->
         <div class="blog-grid">
-          <div class="blog-card fade-in">
+          <div class="blog-card fade-in" onclick="showPost(1)">
             <div class="blog-thumb">📈</div>
             <div class="blog-content">
               <div class="blog-tags"><span class="blog-tag">Phân tích</span><span class="blog-tag">VN-Index</span></div>
@@ -2085,7 +2086,7 @@ footer {
               <div class="blog-meta"><span>15/06/2024</span><span>· 8 phút đọc</span><span>· 3.2k lượt xem</span></div>
             </div>
           </div>
-          <div class="blog-card fade-in fade-in-delay-1">
+          <div class="blog-card fade-in fade-in-delay-1" onclick="showPost(2)">
             <div class="blog-thumb" style="background:linear-gradient(135deg,#0a1628,#111)">💰</div>
             <div class="blog-content">
               <div class="blog-tags"><span class="blog-tag">Tài chính cá nhân</span></div>
@@ -2094,7 +2095,7 @@ footer {
               <div class="blog-meta"><span>10/06/2024</span><span>· 12 phút đọc</span><span>· 5.8k lượt xem</span></div>
             </div>
           </div>
-          <div class="blog-card fade-in fade-in-delay-2">
+          <div class="blog-card fade-in fade-in-delay-2" onclick="showPost(3)">
             <div class="blog-thumb" style="background:linear-gradient(135deg,#001a0e,#111)">🏦</div>
             <div class="blog-content">
               <div class="blog-tags"><span class="blog-tag">Kinh tế vĩ mô</span><span class="blog-tag">Lãi suất</span></div>
@@ -2155,6 +2156,50 @@ footer {
 <!-- ============================================================
      PAGE: CONTACT
 ============================================================ -->
+<!-- ============================================================
+     PAGE: POST DETAIL
+============================================================ -->
+<div id="page-post" class="page">
+  <div class="page-banner">
+    <div class="page-banner-inner">
+      <div class="page-banner-label">Blog</div>
+      <h1 id="postTitle">Đang tải...</h1>
+    </div>
+  </div>
+
+  <section class="section" style="background:var(--black)">
+    <div class="container">
+      <div class="blog-layout">
+        <div>
+          <a href="#" onclick="showPage('blog'); return false;" style="display:inline-flex;align-items:center;gap:6px;color:var(--green);font-size:13px;font-weight:600;text-decoration:none;margin-bottom:24px">← Tất cả bài viết</a>
+
+          <div class="blog-tags" id="postTags" style="margin-bottom:16px"></div>
+          <div class="blog-meta" id="postMeta" style="margin-bottom:28px"></div>
+
+          <div id="postContent" style="color:var(--gray-300);font-size:15px;line-height:1.9"></div>
+        </div>
+
+        <!-- Sidebar -->
+        <div class="blog-sidebar">
+          <div class="sidebar-widget">
+            <div class="widget-title">Danh mục</div>
+            <div class="category-list">
+              <div class="category-item">Phân tích thị trường <span class="category-count">12</span></div>
+              <div class="category-item">Tài chính cá nhân <span class="category-count">8</span></div>
+              <div class="category-item">Kinh tế vĩ mô <span class="category-count">6</span></div>
+              <div class="category-item">Cổ phiếu cơ bản <span class="category-count">15</span></div>
+              <div class="category-item">Phân tích kỹ thuật <span class="category-count">9</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+<!-- ============================================================
+     end page-post
+============================================================ -->
+
 <div id="page-contact" class="page">
   <div class="page-banner">
     <div class="page-banner-inner">
@@ -2602,6 +2647,58 @@ footer {
      JAVASCRIPT
 ============================================================ -->
 <script>
+// ===== BLOG POSTS DATA =====
+const postsData = {
+  1: {
+    title: "Phân tích kỹ thuật VN-Index: Xu hướng tháng 6 và chiến lược giao dịch hiệu quả",
+    tags: ["Phân tích", "VN-Index"],
+    meta: "15/06/2024 · 8 phút đọc · 3.2k lượt xem",
+    content: [
+      "Thị trường chứng khoán tháng 6 có nhiều biến động. Chỉ số VN-Index liên tục kiểm định các vùng hỗ trợ và kháng cự quan trọng, khiến không ít nhà đầu tư băn khoăn về xu hướng sắp tới.",
+      "Ở góc độ kỹ thuật, việc theo dõi khối lượng giao dịch tại các vùng giá then chốt sẽ giúp nhà đầu tư nhận diện sớm tín hiệu đảo chiều hoặc tiếp diễn xu hướng. Kết hợp thêm các chỉ báo động lượng sẽ giúp tăng độ tin cậy của tín hiệu.",
+      "Về chiến lược giao dịch, nhà đầu tư nên ưu tiên quản trị rủi ro chặt chẽ, đặt ngưỡng cắt lỗ rõ ràng và giải ngân theo từng phần thay vì dồn toàn bộ vốn vào một thời điểm, đặc biệt trong giai đoạn thị trường biến động mạnh.",
+      "Cuối cùng, việc theo dõi sát diễn biến dòng tiền khối ngoại và các nhóm ngành dẫn dắt sẽ là yếu tố quan trọng để xác định chiến lược phù hợp cho danh mục trong thời gian tới."
+    ]
+  },
+  2: {
+    title: "5 nguyên tắc vàng khi bắt đầu đầu tư với số vốn nhỏ từ 10 triệu đồng",
+    tags: ["Tài chính cá nhân"],
+    meta: "10/06/2024 · 12 phút đọc · 5.8k lượt xem",
+    content: [
+      "Nhiều người nghĩ rằng cần vốn lớn mới có thể đầu tư hiệu quả. Trên thực tế, với số vốn khiêm tốn từ 10 triệu đồng, nhà đầu tư hoàn toàn có thể xây dựng một danh mục hợp lý nếu tuân thủ đúng nguyên tắc.",
+      "Nguyên tắc đầu tiên là xác định rõ mục tiêu và khẩu vị rủi ro trước khi giải ngân, tránh chạy theo tâm lý đám đông hay các khuyến nghị thiếu cơ sở.",
+      "Thứ hai, nên đa dạng hóa danh mục ở mức phù hợp với quy mô vốn, tránh dồn toàn bộ vào một mã cổ phiếu duy nhất để hạn chế rủi ro tập trung.",
+      "Thứ ba, kỷ luật đầu tư định kỳ (DCA) giúp trung bình hóa giá vốn và giảm áp lực phải canh đúng đáy thị trường.",
+      "Thứ tư, luôn duy trì một phần vốn dự phòng thay vì giải ngân toàn bộ ngay từ đầu, để có dư địa hành động khi thị trường xuất hiện cơ hội tốt hơn.",
+      "Cuối cùng, không ngừng trau dồi kiến thức tài chính và kiên nhẫn với chiến lược đã đặt ra là yếu tố quyết định thành công trong dài hạn."
+    ]
+  },
+  3: {
+    title: "Lãi suất giảm ảnh hưởng như thế nào đến danh mục cổ phiếu của bạn?",
+    tags: ["Kinh tế vĩ mô", "Lãi suất"],
+    meta: "05/06/2024 · 10 phút đọc · 4.1k lượt xem",
+    content: [
+      "FED và NHNN đều có dấu hiệu nới lỏng chính sách tiền tệ trong thời gian gần đây, đây là yếu tố vĩ mô có tác động đáng kể đến dòng tiền trên thị trường chứng khoán.",
+      "Khi lãi suất giảm, chi phí vốn của doanh nghiệp thường giảm theo, tạo điều kiện thuận lợi cho hoạt động mở rộng sản xuất kinh doanh, đặc biệt với các nhóm ngành sử dụng đòn bẩy tài chính cao như bất động sản, xây dựng, tài chính.",
+      "Đồng thời, mặt bằng lãi suất tiết kiệm thấp hơn cũng khiến một phần dòng tiền nhàn rỗi có xu hướng dịch chuyển sang các kênh đầu tư có tỷ suất sinh lời hấp dẫn hơn, trong đó có chứng khoán.",
+      "Tuy nhiên, nhà đầu tư cũng cần thận trọng theo dõi diễn biến lạm phát và tỷ giá song song, vì đây là các biến số có thể ảnh hưởng ngược lại đến định hướng chính sách tiền tệ trong các kỳ điều hành tiếp theo."
+    ]
+  }
+};
+
+// ===== SHOW POST DETAIL =====
+function showPost(id) {
+  const post = postsData[id];
+  if (!post) return;
+
+  document.getElementById('postTitle').textContent = post.title;
+  document.getElementById('postMeta').innerHTML = post.meta.split(' · ').map(m => `<span>${m}</span>`).join('');
+  document.getElementById('postTags').innerHTML = post.tags.map(t => `<span class="blog-tag">${t}</span>`).join('');
+  document.getElementById('postContent').innerHTML = post.content.map(p => `<p style="margin-bottom:18px">${p}</p>`).join('');
+
+  showPage('post');
+}
+
 // ===== PAGE ROUTING =====
 function showPage(name) {
   document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
