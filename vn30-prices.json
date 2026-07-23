@@ -1,182 +1,182 @@
 [
   {
     "sym": "ACB",
-    "price": 22400,
-    "change": -2,
-    "date": "22/07/2026"
+    "price": 22500,
+    "change": 0.4,
+    "date": "23/07/2026"
   },
   {
     "sym": "BCM",
-    "price": 37900,
-    "change": -4.4,
-    "date": "22/07/2026"
+    "price": 38400,
+    "change": 1.3,
+    "date": "23/07/2026"
   },
   {
     "sym": "BID",
-    "price": 35850,
-    "change": -2.6,
-    "date": "22/07/2026"
+    "price": 36000,
+    "change": 0.4,
+    "date": "23/07/2026"
   },
   {
     "sym": "BVH",
-    "price": 57100,
-    "change": -2.1,
-    "date": "22/07/2026"
+    "price": 57200,
+    "change": 0.2,
+    "date": "23/07/2026"
   },
   {
     "sym": "CTG",
-    "price": 29700,
-    "change": -3.9,
-    "date": "22/07/2026"
+    "price": 29050,
+    "change": -2.2,
+    "date": "23/07/2026"
   },
   {
     "sym": "FPT",
-    "price": 64600,
-    "change": -0.3,
-    "date": "22/07/2026"
+    "price": 64700,
+    "change": 0.2,
+    "date": "23/07/2026"
   },
   {
     "sym": "GAS",
-    "price": 64400,
-    "change": -5.3,
-    "date": "22/07/2026"
+    "price": 66800,
+    "change": 3.7,
+    "date": "23/07/2026"
   },
   {
     "sym": "GVR",
-    "price": 27150,
-    "change": -0.7,
-    "date": "22/07/2026"
+    "price": 27100,
+    "change": -0.2,
+    "date": "23/07/2026"
   },
   {
     "sym": "HDB",
-    "price": 25800,
-    "change": -4.3,
-    "date": "22/07/2026"
+    "price": 25950,
+    "change": 0.6,
+    "date": "23/07/2026"
   },
   {
     "sym": "HPG",
-    "price": 20700,
-    "change": -0.5,
-    "date": "22/07/2026"
+    "price": 20800,
+    "change": 0.5,
+    "date": "23/07/2026"
   },
   {
     "sym": "MBB",
-    "price": 22350,
-    "change": -1.5,
-    "date": "22/07/2026"
+    "price": 22050,
+    "change": -1.3,
+    "date": "23/07/2026"
   },
   {
     "sym": "MSN",
-    "price": 63900,
-    "change": -1.5,
-    "date": "22/07/2026"
+    "price": 64000,
+    "change": 0.2,
+    "date": "23/07/2026"
   },
   {
     "sym": "MWG",
-    "price": 70600,
-    "change": -7,
-    "date": "22/07/2026"
+    "price": 71500,
+    "change": 1.3,
+    "date": "23/07/2026"
   },
   {
     "sym": "PLX",
-    "price": 32750,
-    "change": 0.3,
-    "date": "22/07/2026"
+    "price": 33400,
+    "change": 2,
+    "date": "23/07/2026"
   },
   {
     "sym": "POW",
-    "price": 13200,
-    "change": -2.6,
-    "date": "22/07/2026"
+    "price": 13550,
+    "change": 2.7,
+    "date": "23/07/2026"
   },
   {
     "sym": "SAB",
-    "price": 46950,
-    "change": -0.1,
-    "date": "22/07/2026"
+    "price": 47000,
+    "change": 0.1,
+    "date": "23/07/2026"
   },
   {
     "sym": "SHB",
-    "price": 11700,
-    "change": -0.8,
-    "date": "22/07/2026"
+    "price": 12000,
+    "change": 2.6,
+    "date": "23/07/2026"
   },
   {
     "sym": "SSB",
     "price": 15650,
     "change": 0,
-    "date": "22/07/2026"
+    "date": "23/07/2026"
   },
   {
     "sym": "SSI",
-    "price": 22650,
-    "change": -2.4,
-    "date": "22/07/2026"
+    "price": 23550,
+    "change": 4,
+    "date": "23/07/2026"
   },
   {
     "sym": "STB",
-    "price": 71000,
-    "change": -2.3,
-    "date": "22/07/2026"
+    "price": 72000,
+    "change": 1.4,
+    "date": "23/07/2026"
   },
   {
     "sym": "TCB",
-    "price": 29000,
-    "change": -2.7,
-    "date": "22/07/2026"
+    "price": 29250,
+    "change": 0.9,
+    "date": "23/07/2026"
   },
   {
     "sym": "TPB",
-    "price": 14100,
-    "change": -3.1,
-    "date": "22/07/2026"
+    "price": 14000,
+    "change": -0.7,
+    "date": "23/07/2026"
   },
   {
     "sym": "VCB",
-    "price": 54500,
-    "change": -3.9,
-    "date": "22/07/2026"
+    "price": 54000,
+    "change": -0.9,
+    "date": "23/07/2026"
   },
   {
     "sym": "VHM",
-    "price": 126900,
-    "change": -7,
-    "date": "22/07/2026"
+    "price": 132000,
+    "change": 4,
+    "date": "23/07/2026"
   },
   {
     "sym": "VIB",
-    "price": 14450,
-    "change": -3.7,
-    "date": "22/07/2026"
+    "price": 14600,
+    "change": 1,
+    "date": "23/07/2026"
   },
   {
     "sym": "VIC",
-    "price": 202100,
-    "change": -7,
-    "date": "22/07/2026"
+    "price": 214000,
+    "change": 5.9,
+    "date": "23/07/2026"
   },
   {
     "sym": "VJC",
-    "price": 126000,
-    "change": -3.7,
-    "date": "22/07/2026"
+    "price": 127600,
+    "change": 1.3,
+    "date": "23/07/2026"
   },
   {
     "sym": "VNM",
-    "price": 59100,
-    "change": 1.2,
-    "date": "22/07/2026"
+    "price": 57800,
+    "change": -2.2,
+    "date": "23/07/2026"
   },
   {
     "sym": "VPB",
     "price": 25000,
-    "change": -1.4,
-    "date": "22/07/2026"
+    "change": 0,
+    "date": "23/07/2026"
   },
   {
     "sym": "VRE",
-    "price": 21750,
-    "change": -5.6,
-    "date": "22/07/2026"
+    "price": 22000,
+    "change": 1.1,
+    "date": "23/07/2026"
   }
 ]
