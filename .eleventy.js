@@ -20,6 +20,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("vnindex-history.json");
 
   return {
+    pathPrefix: "/vn30-prices/",
     dir: {
       input: "src",
       output: "_site",
