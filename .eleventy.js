@@ -11,17 +11,16 @@ module.exports = function (eleventyConfig) {
     const year = d.getFullYear();
     return `${day} Tháng ${month}, ${year}`;
   });
-
   // Copy các file/tài nguyên tĩnh nguyên trạng, không qua xử lý template
-  eleventyConfig.addPassthroughCopy("images");
   eleventyConfig.addPassthroughCopy("assets");
   eleventyConfig.addPassthroughCopy("admin");
   eleventyConfig.addPassthroughCopy("index.html");
   eleventyConfig.addPassthroughCopy("vn30-prices.json");
   eleventyConfig.addPassthroughCopy("vnindex-history.json");
-
+  eleventyConfig.addPassthroughCopy("images");
+  eleventyConfig.addPassthroughCopy("CNAME");
   return {
-    pathPrefix: "/vn30-prices/",
+    pathPrefix: "/",
     dir: {
       input: "src",
       output: "_site",
