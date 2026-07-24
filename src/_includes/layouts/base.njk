@@ -53,12 +53,25 @@
         <span class="btn-nav-badge">Ưu đãi</span>
       </a>
 
-      <button class="menu-toggle" id="menuToggle" onclick="document.getElementById('mainNav').classList.toggle('open')">
+      <button class="menu-toggle" id="menuToggle" onclick="document.getElementById('mobileMenu').classList.toggle('open')">
         <span></span><span></span><span></span>
       </button>
     </div>
   </div>
 </header>
+
+<!-- ===== MOBILE MENU (giống hệt trang chủ: div riêng, .mobile-menu.open trượt ra) ===== -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="{{ '/' | url }}">Trang chủ</a>
+  <a href="{{ '/' | url }}#about">Giới thiệu</a>
+  <a href="{{ '/' | url }}#services">Dịch vụ</a>
+  <a href="{{ '/' | url }}#products">Sản phẩm</a>
+  <a href="{{ '/blog/' | url }}" class="active">Blog</a>
+  <a href="{{ '/' | url }}#contact">Liên hệ</a>
+  <a href="{{ '/' | url }}#register" class="btn-nav-highlight" style="position:relative;color:var(--green);margin-top:16px;display:inline-flex;align-items:center;gap:8px">→ Đăng ký tư vấn
+    <span class="btn-nav-badge" style="position:static;animation:badgeBounce 1.6s ease-in-out infinite">Ưu đãi</span>
+  </a>
+</div>
 
 <main class="blog-main">
   {{ content | safe }}
