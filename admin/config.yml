@@ -1,5 +1,9 @@
 # Use DecapBridge classic auth (required)
 backend:
+slug:
+  encoding: "ascii"
+  clean_accents: true
+  sanitize_replacement: "-"
   name: git-gateway
   repo: phamhoangthong1999/vn30-prices
   branch: main
