@@ -2913,16 +2913,29 @@ function initVNIndexAutoRefresh() {
   setInterval(loadVNIndex, 5 * 60 * 1000);
 }
 
+// ===== ĐỌC HASH TRÊN URL (dùng khi đến từ blog, vd: index.html#about) =====
+function applyHashRoute() {
+  const hash = window.location.hash.replace('#', '');
+  const validPages = ['home', 'about', 'services', 'products', 'contact', 'register'];
+  if (hash && validPages.includes(hash)) {
+    showPage(hash);
+    // đồng bộ trạng thái active trên menu
+    document.querySelectorAll('#mainNav a').forEach(a => a.classList.remove('active'));
+    document.querySelectorAll('#mainNav a').forEach(a => {
+      const onclickAttr = a.getAttribute('onclick') || '';
+      if (onclickAttr.includes(`showPage('${hash}')`)) a.classList.add('active');
+    });
+  }
+}
+
 // ===== INIT =====
 document.addEventListener('DOMContentLoaded', () => {
   observeFadeIns();
   animateCounters();
-  // Dựng dải giá cổ phiếu chạy ngang
   initTickerAutoRefresh();
-  // Load VN-Index data (biểu đồ Lightweight Charts + SSI)
   initVNIndexAutoRefresh();
+  applyHashRoute(); // ← thêm dòng này, xử lý khi vào trang có hash sẵn (từ blog)
 
-  // Observe scroll
   const scrollObs = new IntersectionObserver((entries) => {
     entries.forEach(e => {
       if (e.isIntersecting) e.target.classList.add('visible');
@@ -2931,20 +2944,5 @@ document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('.fade-in').forEach(el => scrollObs.observe(el));
 });
 
-// Re-run on page change
-const origShow = showPage;
-window.showPage = (name) => {
-  origShow(name);
-  setTimeout(() => {
-    document.querySelectorAll('.page.active .fade-in').forEach(el => {
-      el.classList.remove('visible');
-    });
-    setTimeout(observeFadeIns, 50);
-  }, 50);
-};
-
-// Initial trigger
-setTimeout(observeFadeIns, 200);
-</script>
-</body>
-</html>
+// bắt cả trường hợp hash đổi khi đang ở trang (ví dụ SPA khác trỏ tới)
+window.addEventListener('hashchange', applyHashRoute);
