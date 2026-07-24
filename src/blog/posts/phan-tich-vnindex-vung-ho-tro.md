@@ -5,7 +5,7 @@ tags:
   - Phân tích kỹ thuật
 excerpt: VN-Index đang kiểm định lại vùng hỗ trợ quan trọng sau nhịp điều chỉnh.
   Cùng phân tích các kịch bản có thể xảy ra trong ngắn hạn.
-cover: /images/blog-uploads/capturecxzcxzqdqwda.png
+cover: /images/blog-uploads/ontrend_baocao_vnindex_20260713.png
 ---
 
 ## Diễn biến thị trường tuần qua
