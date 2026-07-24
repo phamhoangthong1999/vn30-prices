@@ -12,7 +12,7 @@ layout: layouts/base.njk
 </article>
 
 {% if cover %}
-<img src="{{ cover }}" alt="{{ title }}" class="post-cover">
+<img src="{{ cover | url }}" alt="{{ title }}" class="post-cover">
 {% endif %}
 
 <div class="post-body">
