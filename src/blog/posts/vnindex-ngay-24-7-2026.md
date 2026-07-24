@@ -1,5 +1,6 @@
 ---
 title: Vnindex ngày 24/7/2026
+author: Phạm Hoàng Thông
 date: 2026-07-24
 tags:
   - Phân tích kỹ thuật
