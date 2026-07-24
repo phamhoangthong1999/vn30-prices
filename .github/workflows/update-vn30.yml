@@ -1,10 +1,12 @@
 name: Cập nhật giá VN30
-
 on:
   schedule:
-    - cron: '15 8 * * 1-5'
+    # Phiên sáng 9:00 - 11:30 (giờ VN) = 2:00 - 4:30 UTC
+    - cron: '0,15,30,45 2,3 * * 1-5'
+    - cron: '0,15,30 4 * * 1-5'
+    # Phiên chiều 13:00 - 14:45 (giờ VN) = 6:00 - 7:45 UTC
+    - cron: '0,15,30,45 6,7 * * 1-5'
   workflow_dispatch: {}
-
 jobs:
   update-prices:
     runs-on: ubuntu-latest
@@ -12,17 +14,14 @@ jobs:
       contents: write
     steps:
       - uses: actions/checkout@v4
-
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
-
       - name: Lấy giá VN30 mới nhất
         env:
           SSI_CONSUMER_ID: ${{ secrets.SSI_CONSUMER_ID }}
           SSI_CONSUMER_SECRET: ${{ secrets.SSI_CONSUMER_SECRET }}
         run: node fetch-vn30-prices.js
-
       - name: Commit & push nếu có thay đổi
         run: |
           git config user.name "vn30-price-bot"
