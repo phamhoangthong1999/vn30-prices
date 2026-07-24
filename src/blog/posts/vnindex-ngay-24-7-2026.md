@@ -8,4 +8,4 @@ excerpt: Ngày hôm nay là ngày vnindex giảm 100 điểm, cổ phiếu bên 
   liên tục
 cover: /images/blog-uploads/vnindex.png
 ---
-có đôi khi nhìn lại mình thấy thật chán
+Phân tích kỹ thuật
