@@ -2,9 +2,10 @@
 title: "Phân tích kỹ thuật VN-Index: Vùng hỗ trợ cần chú ý"
 date: 2026-07-20
 tags:
-  - "Phân tích kỹ thuật"
-excerpt: "VN-Index đang kiểm định lại vùng hỗ trợ quan trọng sau nhịp điều chỉnh. Cùng phân tích các kịch bản có thể xảy ra trong ngắn hạn."
-cover: ""
+  - Phân tích kỹ thuật
+excerpt: VN-Index đang kiểm định lại vùng hỗ trợ quan trọng sau nhịp điều chỉnh.
+  Cùng phân tích các kịch bản có thể xảy ra trong ngắn hạn.
+cover: /images/blog-uploads/vnindex.png
 ---
 
 ## Diễn biến thị trường tuần qua
