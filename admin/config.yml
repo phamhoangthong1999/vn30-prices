@@ -47,6 +47,6 @@ collections:
         name: "cover"
         widget: "image"
         required: false
-        media_folder: "/images/blog-uploads"
-        public_folder: "/images/blog-uploads"
+        media_folder: "images/blog-uploads"
+public_folder: "/images/blog-uploads"
       - { label: "Nội dung bài viết", name: "body", widget: "markdown" }
