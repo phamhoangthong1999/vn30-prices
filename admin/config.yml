@@ -31,8 +31,6 @@ collections:
     slug: "{{slug}}"
     extension: "md"
     format: "yaml-frontmatter"
-    editor:
-      preview: false
     fields:
       - { label: "Tiêu đề", name: "title", widget: "string" }
       - { label: "Tác giả", name: "author", widget: "string", default: "OnTrend" }
