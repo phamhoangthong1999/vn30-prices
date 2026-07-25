@@ -41,4 +41,10 @@ collections:
         default: ["Phân tích kỹ thuật"]
         hint: "Ví dụ: Phân tích kỹ thuật, Kiến thức cơ bản, Tin tức thị trường"
       - { label: "Mô tả ngắn (hiện ở trang danh sách)", name: "excerpt", widget: "text" }
+      - label: "Ảnh bìa"
+        name: "cover"
+        widget: "image"
+        required: false
+        media_folder: "images/blog-uploads"
+        public_folder: "/images/blog-uploads"
       - { label: "Nội dung bài viết", name: "body", widget: "markdown" }
