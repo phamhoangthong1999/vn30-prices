@@ -4,6 +4,6 @@ author: Phạm Hoàng Thông
 date: 2026-07-26
 tags: []
 excerpt: Phân tích doanh nghiệp FPT
-cover: /images/blog-uploads/fpt-corporation-600.png
+cover: /images/blog-uploads/fpt-corporation--600.png
 ---
 dasda
