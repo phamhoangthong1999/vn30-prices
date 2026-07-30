@@ -1394,6 +1394,56 @@ footer {
   .btn-nav { padding: 8px 12px; font-size: 12px; }
   .btn-nav-badge { font-size: 8px; padding: 1px 5px; right: -4px; top: -9px; }
 }
+/* ===== LỢI NHUẬN (bảng hiệu suất cập nhật tay) ===== */
+.profit-section { padding: 48px 0 0; }
+.profit-card {
+  background: var(--gray-900);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 32px 36px;
+}
+.profit-header {
+  display: flex; align-items: center; justify-content: space-between;
+  flex-wrap: wrap; gap: 12px;
+  margin-bottom: 24px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--border);
+}
+.profit-title { font-size: 20px; font-weight: 800; letter-spacing: -0.01em; }
+.profit-all { font-size: 14px; color: var(--gray-200); font-weight: 500; }
+.profit-all .p-val { font-weight: 700; }
+
+.profit-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+.profit-item {}
+.profit-label {
+  font-size: 12px; color: var(--gray-300);
+  text-transform: uppercase; letter-spacing: 0.5px;
+  margin-bottom: 8px;
+}
+.profit-val {
+  display: flex; align-items: center; gap: 6px;
+  font-size: 18px; font-weight: 700;
+}
+.profit-val svg { width: 14px; height: 14px; }
+.profit-val.up { color: var(--green); }
+.profit-val.down { color: #ff5252; }
+.profit-val.flat { color: var(--gray-300); }
+
+.profit-disclaimer {
+  font-size: 11px; color: var(--gray-400);
+  margin-top: 20px; padding-top: 16px;
+  border-top: 1px dashed var(--border);
+}
+
+@media (max-width: 768px) {
+  .profit-grid { grid-template-columns: repeat(2, 1fr); }
+  .profit-card { padding: 24px 20px; }
+}
+
 /* TradingView widget wrapper */
 .tv-widget-wrap {
   background: var(--gray-800);
@@ -1581,6 +1631,65 @@ footer {
             </div>
           </div>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LỢI NHUẬN -->
+  <section class="profit-section">
+    <div class="container">
+      <div class="profit-card fade-in">
+        <div class="profit-header">
+          <div class="profit-title">Lợi nhuận</div>
+          <div class="profit-all">Tất cả
+            <span class="p-val text-green">
+              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none" viewBox="0 0 12 12" style="display:inline;vertical-align:-1px"><path d="M6 2v8M2.5 5.5L6 2l3.5 3.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              11.2%
+            </span>
+          </div>
+        </div>
+        <div class="profit-grid">
+          <div class="profit-item">
+            <div class="profit-label">1W</div>
+            <div class="profit-val flat">↑ --</div>
+          </div>
+          <div class="profit-item">
+            <div class="profit-label">1M</div>
+            <div class="profit-val down">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" fill="none"><path d="M6 10V2M2.5 6.5L6 10l3.5-3.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              -2.5%
+            </div>
+          </div>
+          <div class="profit-item">
+            <div class="profit-label">3M</div>
+            <div class="profit-val down">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" fill="none"><path d="M6 10V2M2.5 6.5L6 10l3.5-3.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              -0.2%
+            </div>
+          </div>
+          <div class="profit-item">
+            <div class="profit-label">6M</div>
+            <div class="profit-val up">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" fill="none"><path d="M6 2v8M2.5 5.5L6 2l3.5 3.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              11.2%
+            </div>
+          </div>
+          <div class="profit-item">
+            <div class="profit-label">1Y</div>
+            <div class="profit-val up">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" fill="none"><path d="M6 2v8M2.5 5.5L6 2l3.5 3.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              11.2%
+            </div>
+          </div>
+          <div class="profit-item">
+            <div class="profit-label">3Y</div>
+            <div class="profit-val up">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" fill="none"><path d="M6 2v8M2.5 5.5L6 2l3.5 3.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              11.2%
+            </div>
+          </div>
+        </div>
+        <div class="profit-disclaimer">* Số liệu hiệu suất giao dịch cá nhân, cập nhật thủ công định kỳ — chỉ mang tính chất tham khảo, không phải cam kết lợi nhuận.</div>
       </div>
     </div>
   </section>
