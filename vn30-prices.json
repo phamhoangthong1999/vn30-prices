@@ -1,20 +1,20 @@
 [
   {
     "sym": "ACB",
-    "price": 22700,
-    "change": 0.2,
+    "price": 22750,
+    "change": 0.4,
     "date": "12/08/2026"
   },
   {
     "sym": "BCM",
-    "price": 40450,
-    "change": -1.7,
+    "price": 40400,
+    "change": -1.8,
     "date": "12/08/2026"
   },
   {
     "sym": "BID",
-    "price": 39200,
-    "change": 0.3,
+    "price": 39350,
+    "change": 0.6,
     "date": "12/08/2026"
   },
   {
@@ -25,32 +25,32 @@
   },
   {
     "sym": "CTG",
-    "price": 32200,
-    "change": -0.3,
+    "price": 32300,
+    "change": 0,
     "date": "12/08/2026"
   },
   {
     "sym": "FPT",
-    "price": 71500,
-    "change": 0.4,
+    "price": 71400,
+    "change": 0.3,
     "date": "12/08/2026"
   },
   {
     "sym": "GAS",
-    "price": 78300,
-    "change": 1,
+    "price": 79300,
+    "change": 2.3,
     "date": "12/08/2026"
   },
   {
     "sym": "GVR",
-    "price": 31550,
-    "change": 0.5,
+    "price": 31600,
+    "change": 0.6,
     "date": "12/08/2026"
   },
   {
     "sym": "HDB",
-    "price": 27100,
-    "change": 0.7,
+    "price": 27050,
+    "change": 0.6,
     "date": "12/08/2026"
   },
   {
@@ -61,44 +61,44 @@
   },
   {
     "sym": "MBB",
-    "price": 20450,
-    "change": 0.5,
-    "date": "12/08/2026"
-  },
-  {
-    "sym": "MSN",
-    "price": 67300,
-    "change": 0.3,
-    "date": "12/08/2026"
-  },
-  {
-    "sym": "MWG",
-    "price": 73600,
-    "change": 0.5,
-    "date": "12/08/2026"
-  },
-  {
-    "sym": "PLX",
-    "price": 36700,
-    "change": 0.3,
-    "date": "12/08/2026"
-  },
-  {
-    "sym": "POW",
-    "price": 13700,
-    "change": -0.4,
-    "date": "12/08/2026"
-  },
-  {
-    "sym": "SAB",
-    "price": 45750,
+    "price": 20400,
     "change": 0.2,
     "date": "12/08/2026"
   },
   {
+    "sym": "MSN",
+    "price": 67400,
+    "change": 0.4,
+    "date": "12/08/2026"
+  },
+  {
+    "sym": "MWG",
+    "price": 73900,
+    "change": 1,
+    "date": "12/08/2026"
+  },
+  {
+    "sym": "PLX",
+    "price": 36850,
+    "change": 0.7,
+    "date": "12/08/2026"
+  },
+  {
+    "sym": "POW",
+    "price": 13750,
+    "change": 0,
+    "date": "12/08/2026"
+  },
+  {
+    "sym": "SAB",
+    "price": 45700,
+    "change": 0.1,
+    "date": "12/08/2026"
+  },
+  {
     "sym": "SHB",
-    "price": 11850,
-    "change": -0.4,
+    "price": 11900,
+    "change": 0,
     "date": "12/08/2026"
   },
   {
@@ -121,8 +121,8 @@
   },
   {
     "sym": "TCB",
-    "price": 31050,
-    "change": 0.2,
+    "price": 31200,
+    "change": 0.6,
     "date": "12/08/2026"
   },
   {
@@ -139,8 +139,8 @@
   },
   {
     "sym": "VHM",
-    "price": 73700,
-    "change": 2.2,
+    "price": 74000,
+    "change": 2.6,
     "date": "12/08/2026"
   },
   {
@@ -151,20 +151,20 @@
   },
   {
     "sym": "VIC",
-    "price": 213000,
-    "change": 2.2,
+    "price": 214000,
+    "change": 2.6,
     "date": "12/08/2026"
   },
   {
     "sym": "VJC",
-    "price": 127500,
-    "change": 0.2,
+    "price": 127900,
+    "change": 0.6,
     "date": "12/08/2026"
   },
   {
     "sym": "VNM",
-    "price": 62000,
-    "change": 0,
+    "price": 62200,
+    "change": 0.3,
     "date": "12/08/2026"
   },
   {
@@ -175,8 +175,8 @@
   },
   {
     "sym": "VRE",
-    "price": 25750,
-    "change": 1.2,
+    "price": 25800,
+    "change": 1.4,
     "date": "12/08/2026"
   }
 ]
