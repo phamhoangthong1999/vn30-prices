@@ -1,26 +1,26 @@
 [
   {
     "sym": "ACB",
-    "price": 22000,
-    "change": -0.7,
+    "price": 21950,
+    "change": -0.9,
     "date": "17/08/2026"
   },
   {
     "sym": "BCM",
-    "price": 42150,
-    "change": -2.1,
+    "price": 41800,
+    "change": -2.9,
     "date": "17/08/2026"
   },
   {
     "sym": "BID",
-    "price": 35700,
-    "change": -6.7,
+    "price": 35650,
+    "change": -6.8,
     "date": "17/08/2026"
   },
   {
     "sym": "BVH",
-    "price": 65900,
-    "change": 1.4,
+    "price": 67000,
+    "change": 3.1,
     "date": "17/08/2026"
   },
   {
@@ -31,56 +31,56 @@
   },
   {
     "sym": "FPT",
-    "price": 68800,
-    "change": 0.7,
+    "price": 69000,
+    "change": 1,
     "date": "17/08/2026"
   },
   {
     "sym": "GAS",
-    "price": 77500,
-    "change": 2,
+    "price": 79000,
+    "change": 3.9,
     "date": "17/08/2026"
   },
   {
     "sym": "GVR",
-    "price": 31200,
-    "change": 0,
+    "price": 31600,
+    "change": 1.3,
     "date": "17/08/2026"
   },
   {
     "sym": "HDB",
-    "price": 26650,
-    "change": 0.8,
+    "price": 26750,
+    "change": 1.1,
     "date": "17/08/2026"
   },
   {
     "sym": "HPG",
-    "price": 21050,
-    "change": -0.9,
+    "price": 21100,
+    "change": -0.7,
     "date": "17/08/2026"
   },
   {
     "sym": "MBB",
-    "price": 20000,
-    "change": 0,
+    "price": 20050,
+    "change": 0.2,
     "date": "17/08/2026"
   },
   {
     "sym": "MSN",
-    "price": 65900,
-    "change": -0.6,
+    "price": 66000,
+    "change": -0.5,
     "date": "17/08/2026"
   },
   {
     "sym": "MWG",
-    "price": 72100,
-    "change": -0.4,
+    "price": 72300,
+    "change": -0.1,
     "date": "17/08/2026"
   },
   {
     "sym": "PLX",
-    "price": 34950,
-    "change": -0.3,
+    "price": 35450,
+    "change": 1.1,
     "date": "17/08/2026"
   },
   {
@@ -91,8 +91,8 @@
   },
   {
     "sym": "SAB",
-    "price": 45750,
-    "change": 1,
+    "price": 45600,
+    "change": 0.7,
     "date": "17/08/2026"
   },
   {
@@ -103,44 +103,44 @@
   },
   {
     "sym": "SSB",
-    "price": 15150,
-    "change": 0.7,
+    "price": 15100,
+    "change": 0.3,
     "date": "17/08/2026"
   },
   {
     "sym": "SSI",
-    "price": 19750,
-    "change": -19.4,
+    "price": 19850,
+    "change": -19,
     "date": "17/08/2026"
   },
   {
     "sym": "STB",
-    "price": 73700,
-    "change": 1.9,
+    "price": 73500,
+    "change": 1.7,
     "date": "17/08/2026"
   },
   {
     "sym": "TCB",
-    "price": 31700,
-    "change": -0.9,
+    "price": 31650,
+    "change": -1.2,
     "date": "17/08/2026"
   },
   {
     "sym": "TPB",
-    "price": 14350,
-    "change": -0.3,
+    "price": 14300,
+    "change": -0.7,
     "date": "17/08/2026"
   },
   {
     "sym": "VCB",
-    "price": 58300,
-    "change": -0.3,
+    "price": 58500,
+    "change": 0,
     "date": "17/08/2026"
   },
   {
     "sym": "VHM",
-    "price": 68000,
-    "change": -0.3,
+    "price": 66900,
+    "change": -2.1,
     "date": "17/08/2026"
   },
   {
@@ -151,8 +151,8 @@
   },
   {
     "sym": "VIC",
-    "price": 195100,
-    "change": -2.6,
+    "price": 196500,
+    "change": -1.9,
     "date": "17/08/2026"
   },
   {
@@ -169,8 +169,8 @@
   },
   {
     "sym": "VPB",
-    "price": 24850,
-    "change": -1,
+    "price": 24800,
+    "change": -1.2,
     "date": "17/08/2026"
   },
   {
