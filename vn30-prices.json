@@ -6,21 +6,27 @@
     "date": "16/09/2026"
   },
   {
-    "sym": "HDB",
-    "price": 27100,
-    "change": 0,
+    "sym": "GVR",
+    "price": 32100,
+    "change": 3.7,
     "date": "16/09/2026"
   },
   {
-    "sym": "SAB",
-    "price": 44100,
-    "change": -1,
+    "sym": "PLX",
+    "price": 38200,
+    "change": 2.3,
     "date": "16/09/2026"
   },
   {
-    "sym": "VHM",
-    "price": 71000,
-    "change": -0.6,
+    "sym": "TCB",
+    "price": 32450,
+    "change": 0.8,
+    "date": "16/09/2026"
+  },
+  {
+    "sym": "VNM",
+    "price": 59600,
+    "change": -0.2,
     "date": "16/09/2026"
   }
 ]
