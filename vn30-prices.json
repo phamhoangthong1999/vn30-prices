@@ -6,20 +6,20 @@
     "date": "17/09/2026"
   },
   {
-    "sym": "HDB",
-    "price": 27600,
-    "change": 1.8,
+    "sym": "GVR",
+    "price": 32200,
+    "change": 0.3,
     "date": "17/09/2026"
   },
   {
-    "sym": "SHB",
-    "price": 11600,
-    "change": 0.9,
+    "sym": "SAB",
+    "price": 44300,
+    "change": 0.5,
     "date": "17/09/2026"
   },
   {
-    "sym": "VIB",
-    "price": 13600,
+    "sym": "VHM",
+    "price": 71300,
     "change": 0.4,
     "date": "17/09/2026"
   }
