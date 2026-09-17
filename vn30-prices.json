@@ -1,32 +1,44 @@
 [
   {
     "sym": "ACB",
-    "price": 22600,
-    "change": 2.3,
-    "date": "16/09/2026"
+    "price": 22550,
+    "change": -0.2,
+    "date": "17/09/2026"
   },
   {
-    "sym": "GVR",
-    "price": 32100,
-    "change": 3.7,
-    "date": "16/09/2026"
+    "sym": "FPT",
+    "price": 73700,
+    "change": -0.1,
+    "date": "17/09/2026"
   },
   {
-    "sym": "PLX",
-    "price": 38200,
-    "change": 2.3,
-    "date": "16/09/2026"
+    "sym": "MBB",
+    "price": 20400,
+    "change": 0.5,
+    "date": "17/09/2026"
   },
   {
-    "sym": "TCB",
-    "price": 32450,
-    "change": 0.8,
-    "date": "16/09/2026"
+    "sym": "POW",
+    "price": 12600,
+    "change": -0.4,
+    "date": "17/09/2026"
+  },
+  {
+    "sym": "SSI",
+    "price": 21150,
+    "change": 2.9,
+    "date": "17/09/2026"
+  },
+  {
+    "sym": "VCB",
+    "price": 59700,
+    "change": 0.7,
+    "date": "17/09/2026"
   },
   {
     "sym": "VNM",
-    "price": 59600,
-    "change": -0.2,
-    "date": "16/09/2026"
+    "price": 60500,
+    "change": 1.5,
+    "date": "17/09/2026"
   }
 ]
