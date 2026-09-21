@@ -6,27 +6,27 @@
     "date": "21/09/2026"
   },
   {
-    "sym": "BCM",
-    "price": 39800,
-    "change": -1.1,
+    "sym": "BID",
+    "price": 36200,
+    "change": 1.3,
     "date": "21/09/2026"
   },
   {
-    "sym": "BVH",
-    "price": 70500,
-    "change": 2.9,
+    "sym": "FPT",
+    "price": 66400,
+    "change": -7.4,
     "date": "21/09/2026"
   },
   {
-    "sym": "GAS",
-    "price": 88600,
-    "change": 0.7,
+    "sym": "HDB",
+    "price": 27600,
+    "change": 0.4,
     "date": "21/09/2026"
   },
   {
-    "sym": "HPG",
-    "price": 21100,
-    "change": -2.1,
+    "sym": "MBB",
+    "price": 20200,
+    "change": 1.5,
     "date": "21/09/2026"
   },
   {
@@ -54,21 +54,15 @@
     "date": "21/09/2026"
   },
   {
-    "sym": "VIB",
-    "price": 13350,
-    "change": -1.8,
+    "sym": "VHM",
+    "price": 68100,
+    "change": -4.1,
     "date": "21/09/2026"
   },
   {
-    "sym": "VIC",
-    "price": 235000,
-    "change": -2.6,
-    "date": "21/09/2026"
-  },
-  {
-    "sym": "VNM",
-    "price": 60300,
-    "change": -1.5,
+    "sym": "VJC",
+    "price": 138000,
+    "change": 7,
     "date": "21/09/2026"
   },
   {
