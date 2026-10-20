@@ -1,182 +1,182 @@
 [
   {
     "sym": "ACB",
-    "price": 20250,
-    "change": -1.7,
-    "date": "19/10/2026"
+    "price": 20300,
+    "change": 0.2,
+    "date": "20/10/2026"
   },
   {
     "sym": "BCM",
-    "price": 39200,
-    "change": 1.7,
-    "date": "19/10/2026"
+    "price": 39600,
+    "change": 1,
+    "date": "20/10/2026"
   },
   {
     "sym": "BID",
-    "price": 33650,
-    "change": -0.9,
-    "date": "19/10/2026"
+    "price": 33550,
+    "change": -0.3,
+    "date": "20/10/2026"
   },
   {
     "sym": "BVH",
-    "price": 70700,
-    "change": -1.8,
-    "date": "19/10/2026"
+    "price": 69100,
+    "change": -2.3,
+    "date": "20/10/2026"
   },
   {
     "sym": "CTG",
-    "price": 30500,
-    "change": -0.3,
-    "date": "19/10/2026"
+    "price": 30200,
+    "change": -1,
+    "date": "20/10/2026"
   },
   {
     "sym": "FPT",
-    "price": 57100,
-    "change": -1.9,
-    "date": "19/10/2026"
+    "price": 57500,
+    "change": 0.7,
+    "date": "20/10/2026"
   },
   {
     "sym": "GAS",
-    "price": 76700,
-    "change": 0.8,
-    "date": "19/10/2026"
+    "price": 76400,
+    "change": -0.4,
+    "date": "20/10/2026"
   },
   {
     "sym": "GVR",
-    "price": 31350,
-    "change": 0.3,
-    "date": "19/10/2026"
+    "price": 31400,
+    "change": 0.2,
+    "date": "20/10/2026"
   },
   {
     "sym": "HDB",
-    "price": 22750,
-    "change": -0.2,
-    "date": "19/10/2026"
+    "price": 22300,
+    "change": -2,
+    "date": "20/10/2026"
   },
   {
     "sym": "HPG",
-    "price": 20550,
-    "change": -1.7,
-    "date": "19/10/2026"
+    "price": 21050,
+    "change": 2.4,
+    "date": "20/10/2026"
   },
   {
     "sym": "MBB",
-    "price": 19700,
-    "change": -0.8,
-    "date": "19/10/2026"
+    "price": 19600,
+    "change": -0.5,
+    "date": "20/10/2026"
   },
   {
     "sym": "MSN",
-    "price": 72400,
-    "change": 1.4,
-    "date": "19/10/2026"
+    "price": 73200,
+    "change": 1.1,
+    "date": "20/10/2026"
   },
   {
     "sym": "MWG",
-    "price": 74200,
+    "price": 74500,
     "change": 0.4,
-    "date": "19/10/2026"
+    "date": "20/10/2026"
   },
   {
     "sym": "PLX",
-    "price": 35150,
-    "change": 0.3,
-    "date": "19/10/2026"
+    "price": 34900,
+    "change": -0.7,
+    "date": "20/10/2026"
   },
   {
     "sym": "POW",
-    "price": 12250,
-    "change": 0.4,
-    "date": "19/10/2026"
+    "price": 12500,
+    "change": 2,
+    "date": "20/10/2026"
   },
   {
     "sym": "SAB",
-    "price": 42800,
-    "change": -0.5,
-    "date": "19/10/2026"
+    "price": 42950,
+    "change": 0.4,
+    "date": "20/10/2026"
   },
   {
     "sym": "SHB",
-    "price": 10550,
-    "change": -0.9,
-    "date": "19/10/2026"
+    "price": 10500,
+    "change": -0.5,
+    "date": "20/10/2026"
   },
   {
     "sym": "SSB",
-    "price": 15950,
-    "change": -1.2,
-    "date": "19/10/2026"
+    "price": 15800,
+    "change": -0.9,
+    "date": "20/10/2026"
   },
   {
     "sym": "SSI",
     "price": 19800,
-    "change": 1.8,
-    "date": "19/10/2026"
+    "change": 0,
+    "date": "20/10/2026"
   },
   {
     "sym": "STB",
-    "price": 61800,
-    "change": -1.6,
-    "date": "19/10/2026"
+    "price": 63000,
+    "change": 1.9,
+    "date": "20/10/2026"
   },
   {
     "sym": "TCB",
-    "price": 33250,
-    "change": 0.2,
-    "date": "19/10/2026"
+    "price": 33800,
+    "change": 1.7,
+    "date": "20/10/2026"
   },
   {
     "sym": "TPB",
     "price": 11950,
-    "change": -0.4,
-    "date": "19/10/2026"
+    "change": 0,
+    "date": "20/10/2026"
   },
   {
     "sym": "VCB",
-    "price": 56200,
-    "change": -1.2,
-    "date": "19/10/2026"
+    "price": 55600,
+    "change": -1.1,
+    "date": "20/10/2026"
   },
   {
     "sym": "VHM",
-    "price": 60300,
-    "change": -1.1,
-    "date": "19/10/2026"
+    "price": 57900,
+    "change": -4,
+    "date": "20/10/2026"
   },
   {
     "sym": "VIB",
     "price": 13750,
-    "change": -0.7,
-    "date": "19/10/2026"
+    "change": 0,
+    "date": "20/10/2026"
   },
   {
     "sym": "VIC",
     "price": 207000,
-    "change": -3.7,
-    "date": "19/10/2026"
+    "change": 0,
+    "date": "20/10/2026"
   },
   {
     "sym": "VJC",
-    "price": 127500,
-    "change": 0,
-    "date": "19/10/2026"
+    "price": 125400,
+    "change": -1.6,
+    "date": "20/10/2026"
   },
   {
     "sym": "VNM",
-    "price": 57500,
-    "change": -0.5,
-    "date": "19/10/2026"
+    "price": 57800,
+    "change": 0.5,
+    "date": "20/10/2026"
   },
   {
     "sym": "VPB",
-    "price": 24000,
-    "change": -2,
-    "date": "19/10/2026"
+    "price": 23850,
+    "change": -0.6,
+    "date": "20/10/2026"
   },
   {
     "sym": "VRE",
-    "price": 23050,
-    "change": 0.9,
-    "date": "19/10/2026"
+    "price": 23100,
+    "change": 0.2,
+    "date": "20/10/2026"
   }
 ]
